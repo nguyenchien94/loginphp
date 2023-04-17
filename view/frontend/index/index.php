@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <link rel="stylesheet" href="./public/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <video autoplay muted loop class="video">
+        <source src="./././public/image/video.mp4" type="video/mp4">
+        </video>
+    <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="title-home">AI BÓI PHIÊN BẢN 4.2.7</div>
+                </div>
+            </div>
+            <div class="row two">
+                <div class="col-md-6 col-sm-12">
+                    <div class="icon" style="background-image: url('./././public/image/icon.png'); background-repeat: no-repeat; background-size: contain;">
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <div class="chat" id="scol">
+                        <?php
+                        require_once APP_PATH . '/model/comment_model.php';
+                        require_once APP_PATH . '/controller/backend/comment.php';
+                        $list_cmt = cmt_list_all();
+                        foreach ($list_cmt as $row) {
+                            ?>
+                            <div style="font-size:30px;color: red;">Admin:
+                                <?= $row['description'] ?>
+                            </div>
+                            <?php
+                        }
+                        ?>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="counter-up">
+                        <div class="text">loading</div>
+                        <div class="counter">100</div>
+                        <div class="percent">%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="./public/css/script.js"></script>
+    </body>
+    </html>

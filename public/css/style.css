@@ -1,0 +1,318 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.two {
+	margin-left: 600px;
+}
+
+.row {
+	display: flex;
+	justify-content: center;
+}
+
+.title-header {
+	display: flex;
+    justify-content: start;
+    margin-right: 50px;
+    font-size: 25px;
+    margin-top: 30px;
+    color: #FFC800;
+}
+
+.title-header:hover {
+	color: #FFC800A6;
+}
+
+.video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	width: 100%;
+	height: 100vh;
+	object-fit: cover;
+}
+
+.info .account {
+	font-size: 30px;
+	color: #ffc800;
+}
+
+.status {
+	display: flex;
+	align-items: center;
+}
+
+.info .status .title {
+	font-size: 30px;
+	color: #ffc800;
+}
+
+.info .status .work {
+	color: #00ff08;
+	font-size: 30px;
+	margin-left: 10px;
+}
+
+.title-home {
+	color: #ffc800;
+	font-size: 80px;
+	text-align: center;
+	font-weight: 800;
+}
+
+.icon {
+	height: 200px;
+	display: block;
+	margin-left: auto;
+	margin-right: 10px;
+	width: 200px;
+	margin-top: 150px;
+	background-color: #FFFFFF;
+	position: relative;
+}
+
+.chat {
+	content: '';
+	height: 400px;
+	width: 700px;
+	background-color: #FFFFFF;
+	left: 100%;
+	top: -60%;
+	border-radius: 30px;
+	padding: 20px;
+}
+
+.counter-up:before {
+	position: absolute;
+	content: "";
+	background-color: #000000;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	opacity: 0.9;
+	z-index: 1;
+}
+
+.counter-up {
+	display: flex;
+	justify-content: center;
+	margin-top: 150px;
+}
+
+.text {
+	color: #FFFFFF;
+	margin-right: 50px;
+	text-transform: uppercase;
+	font-size: 80px;
+	font-weight: 700;
+	z-index: 3;
+}
+
+.counter {
+	color: #FFFFFF;
+	text-transform: uppercase;
+	font-size: 80px;
+	font-weight: 700;
+	z-index: 3;
+}
+
+.percent {
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-size: 80px;
+    font-weight: 700;
+    z-index: 3;
+}
+
+.admin {
+	font-size: 40px;
+	color: #FFFFFF;
+	margin-left: 50px;
+}
+
+.admin:hover {
+	color: #FF0023;
+}
+
+/* CSS HOME END */
+
+.login {
+	margin: auto;
+    width: 450px;
+    height: min-content;
+    padding: 60px 20px;
+    border-radius: 12px;
+    background: #000000;
+}
+
+.login h1 {
+    font-size: 52px;
+    margin-bottom: 25px;
+    color: #FFFFFF;
+}
+
+.login .title {
+	color: #FFFFFF;
+}
+
+.login form {
+    font-size: 20px;
+}
+
+.login form .form-group {
+    margin-bottom: 12px;
+}
+
+.login form input[type="submit"] {
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.login form .form-group .form-label {
+	color: #FFFFFF70;
+}
+
+.login form .form-group .form-control {
+	color: #FFFFFF;
+    background: #222222;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+
+.was-validated .form-control:focus {
+	border-color: #FFFFFF00;
+}
+
+@media only screen and (max-width: 768px) {
+	.login {
+		width: 300px;
+		padding: 30px 20px;
+	}
+	.login h1 {
+		font-size: 36px;
+	}
+
+	.login .title {
+		font-size: 20px;
+	}
+	.form-label {
+		font-size: 15px;
+	}
+	.login form input[type="submit"] {
+		font-size: 18px;
+		margin-top: 15px;
+	}
+	.title-home {
+		font-size: 30px;
+	}
+
+	.video {
+		width: 100%;
+		height: 100vh;
+	}
+
+	.chat {
+		width: 250px;
+		height: 100px;
+		margin-top: 76px;
+	}
+
+	.text, 
+	.counter, 
+	.percent {
+		font-size: 50px;
+		text-align: center;
+	}
+
+	.text {
+		margin-right: 20px;
+	}
+}
+
+@media only screen and (max-width: 1024px) {
+	.title-home {
+		font-size: 45px;
+	}
+
+	.chat {
+		width: 400px;
+		height: 100px;
+		margin-top: 100px;
+	}
+}
+
+@media only screen and (max-width: 425px) {
+	.title-home {
+		font-size: 30px;
+		margin-top: 30px;
+	}
+
+	.row {
+		display: block;
+	}
+
+	.icon {
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+
+	.chat {
+		margin: auto;
+	}
+
+	.text, 
+	.counter, 
+	.percent {
+		font-size: 30px;
+		text-align: center;
+	}
+
+	.text {
+		margin-right: 20px;
+	}
+
+	.chat {
+		width: 280px;
+		height: 140px;
+		margin-top: 30px;
+		overflow-y: scroll;
+		background: #F5F5F5;	
+	}
+}
+
+/*css info*/
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+#scol::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+#scol::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+#scol::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #555;
+}
